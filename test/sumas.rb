@@ -47,7 +47,7 @@ describe 'Fixnum' do
 
 end
 
-describe 'Acceptance Test', :if => false do
+describe 'Acceptance Test' => false do
 
 	it 'gives us all natural sums resulting a number' do
 		5.sums().should eql [ '5+0', '4+1', '3+2' ]
