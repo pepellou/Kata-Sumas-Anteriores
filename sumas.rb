@@ -1,8 +1,6 @@
-class Sumas
+class Fixnum
 
-	attr_accessor :number
-
-	def getSumas
+	def sums
 		[ '5+0', '4+1', '3+2' ]
 	end
 
