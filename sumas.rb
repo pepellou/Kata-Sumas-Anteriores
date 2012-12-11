@@ -1,7 +1,7 @@
 class Fixnum
 
 	def sums
-		[ '1+0' ]
+		[ "#{self}+0" ]
 	end
 
 end
