@@ -7,8 +7,14 @@ describe 'Fixnum' do
 
 	describe 'sums' do
 
-		it 'computes trivial sum' do
-			1.sums().should eql ['1+0']
+		@some_nums = [ 1, 2, 3, 4, 5, 15, 37 ]
+
+		@some_nums.each do |n|
+
+			it 'computes trivial sum' do
+				n.sums().should include("#{n}+0")
+			end
+
 		end
 
 	end
