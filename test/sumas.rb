@@ -15,9 +15,6 @@ describe 'Fixnum' do
 				n.sums().should include("#{n}+0")
 			end
 
-		end
-
-		@some_nums.each do |n|
 
 			it "computes proper number of sums for number #{n}" do
 				n.sums().length.should eql n/2+1
