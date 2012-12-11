@@ -7,7 +7,7 @@ describe 'Sumas' do
 
 end
 
-describe 'Acceptance Test' do
+describe 'Acceptance Test', :if => false do
 
 	it 'gives us all natural sums resulting a number' do
 		5.sums().should eql [ '5+0', '4+1', '3+2' ]
