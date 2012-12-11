@@ -33,6 +33,14 @@ describe 'Fixnum' do
 				end
 			end
 
+			it "returns sums that sum n for n = #{n}" do
+				n.sums().each do |sum|
+					summands = sum.split("+").map { |elem| elem.to_i }
+					totalSum = summands.inject { |sum, elem| sum + elem }
+					totalSum.should eql n
+				end
+			end
+
 		end
 
 	end
