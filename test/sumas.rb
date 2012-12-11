@@ -11,7 +11,7 @@ describe 'Fixnum' do
 
 		@some_nums.each do |n|
 
-			it 'computes trivial sum' do
+			it "computes trivial sum for number #{n}" do
 				n.sums().should include("#{n}+0")
 			end
 
