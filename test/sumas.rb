@@ -20,6 +20,12 @@ describe 'Fixnum' do
 				n.sums().length.should eql n/2+1
 			end
 
+			it "returns sums for number #{n}" do
+				n.sums().each do |sum|
+					sum.should include("+")
+				end
+			end
+
 		end
 
 	end
