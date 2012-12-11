@@ -3,7 +3,15 @@ require 'rspec'
 
 require_relative '../sumas'
 
-describe 'Sumas' do
+describe 'Fixnum' do
+
+	describe 'sums' do
+
+		it 'computes trivial sum' do
+			1.sums().should eql ['1+0']
+		end
+
+	end
 
 end
 
