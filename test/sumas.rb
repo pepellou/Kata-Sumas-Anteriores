@@ -26,6 +26,13 @@ describe 'Fixnum' do
 				end
 			end
 
+			it "returns ordered sums for number #{n}" do
+				n.sums().each_with_index do |sum, i|
+					num_to_sum = n - i
+					sum.should include("#{num_to_sum}+")
+				end
+			end
+
 		end
 
 	end
